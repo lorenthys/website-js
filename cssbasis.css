@@ -19,12 +19,11 @@
    text-align: center; }
 .menu>li>a.active{ background-color: #c99339; }
 .menu>li>a:hover{ background-color: white; }
-
 img {display: block; max-width: fit-content;}
-body { font-family: 'Bebas Neue', serif; background-color: black; color: #ff4500;}
-h1 {font-family:'Bebas Neue', serif; font-size: 50px ;color: orangered; display: inline;}
-h2 {font-family:'Bebas Neue', serif; font-size: 50px ;border: 2px solid #ff4500;color: orangered; display: inline;}
-p {font-family: 'Bebas Neue', serif; font-size: 20px ;color: #ff4500;}
+body { font-family: 'Bebas Neue', serif; background-color: black; color: white;}
+h1 {font-family:'Bebas Neue', serif; font-size: 50px ;color: white; display: inline;}
+h2 {font-family:'Bebas Neue', serif; font-size: 50px ;border: 2px solid #ff4500;color: white; display: inline;}
+p {font-family: 'Bebas Neue', serif; font-size: 20px ;color: white;}
 li {font-family: 'Bebas Neue', serif; font-size: 20px;color: #ff4500;}
 form {font-family: 'Bebas Neue', serif; font-size: 20px;color: #ff4500;}
 label {margin-block: 10px ; display: block; width: 100%;}
