@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <title>JS Klimaattechnieken</title>
+    <link rel="stylesheet" href="cssbasis.css">
+</head>
+<body>
+    <div align="center"><img src="JS logo.png" ></div>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="airco.html">Airco</a></li>
+          <li><a href="warmtepomp.html">Warmtepomp</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p align="center">Jelle Strypsteen<br>J.e. Claeslaan 49a<br>2560 Nijlen<br>0477/820.941</p>
+    <p align="center">Of vul het contactformulier in en ik neem zo snel mogelijk contact met u op.</p>
+    <div align="center"><h2>Contactformulier:</h2></div>
+    <form action="https://formsubmit.co/jsklimaattechnieken@telenet.be" method="post">
+        <div align="center"><label for="voornaam">Voornaam*:</label></div>
+        <div align="center"><input type="text" id="voornaam" name="voornaam" required></div>
+        <div align="center"><label for="achternaam">Achternaam*:</label></div>
+        <div align="center"><input type="text" id="achternaam" name="achternaam" required></div>
+        <div align="center"><label for="email">E-mail*:</label></div>
+        <div align="center"><input type="email" id="email" name="email" required></div>
+        <div align="center"><label for="telefoon">Telefoon*:</label></div>
+        <div align="center"><input type="tel" id="telefoon" name="telefoon" required></div>
+        <div align="center"><label for="offerte">Offerte / info over:</label></div>
+        <div align="center">
+          <select id="offerte" name="offerte" required>
+            <option value="">Selecteer</option>
+            <option value="Airco">Airco</option>
+            <option value="Warmtepomp">Warmtepomp</option>
+            <option value="Airco + warmtepomp">Airco + warmtepomp</option>
+          </select>
+        </div>
+        <div align="center"><label for="opmerkingen">Opmerkingen:</label></div>
+        <div align="center"><textarea id="opmerkingen" name="opmerkingen" rows="10"></textarea></div>
+        <div align="center"><input type="submit" value="Verzend"></div>
+    </form>
+</body>
+<foot><div align="center">- © Copyright Thys Loren - </div></foot>
+</html>
