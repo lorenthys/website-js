@@ -1,4 +1,14 @@
 @import url(http://fonts.bunny.net/css?family=bebas-neue:400);
+
+body {
+  font-family: 'Bebas Neue', serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* MENU STIJLEN */
 .menu {
   font-family: 'Bebas Neue', serif;
   padding: 0;
@@ -7,64 +17,141 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-.menu>li { list-style-type: none; margin:0; }
-.menu>li>a{
-   text-decoration: none;
-   display: block;
-   padding: 1.5rem 1rem;
-   color: black;
-   font-weight: 500;
-   font-size: 1.1rem;
-   background-color: orangered;
-   text-align: center; }
-.menu>li>a.active{ background-color: #c99339; }
-.menu>li>a:hover{ background-color: white; }
-img {display: block; max-width: fit-content;}
-body { font-family: 'Bebas Neue', serif; background-color: black; color: white;}
-h1 {font-family:'Bebas Neue', serif; font-size: 50px ;color: white; display: inline;}
-h2 {font-family:'Bebas Neue', serif; font-size: 50px ;border: 2px solid #ff4500;color: white; display: inline;}
-p {font-family: 'Bebas Neue', serif; font-size: 20px ;color: white;}
-li {font-family: 'Bebas Neue', serif; font-size: 20px;color: #ff4500;}
-form {font-family: 'Bebas Neue', serif; font-size: 20px;color: #ff4500;}
-label {margin-block: 10px ; display: block; width: 100%;}
-input {margin-block: 10px ; display: block; width: 20%;}
-select {display: block; width: 20%;}
-textarea {display: block; width: 20%;}
-body {font-family: 'Bebas Neue', serif;
-      background-color: black;
-      margin: 0;
-      padding: 20px;}
 
-    .container {display: flex;justify-content: space-between;flex-wrap: wrap;}
+.menu > li {
+  list-style-type: none;
+  margin: 0;
+}
 
-    .blok {background-color: orangered;
-      color: black;
-      width: 22%;
-      padding: 20px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;}
+.menu > li > a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem 1rem;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: orangered;
+  text-align: center;
+}
 
-    .blok img {width: 60px;height: 60px;margin-bottom: 15px;}
+.menu > li > a.active {
+  background-color: #c99339;
+}
 
-    @media (max-width: 768px) {
-      .blok {width: 48%;margin-bottom: 20px;}}
+.menu > li > a:hover {
+  background-color: white;
+}
 
-    @media (max-width: 480px) {
-      .blok {width: 100%;margin-bottom: 20px;}}
+/* BLIKBARE BLOKKEN STIJL */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 22%;
+}
+
+.container > a:hover .blok {
+  background-color: #ff7043;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.blok {
+  background-color: orangered;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.blok img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container > a {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > a {
+    width: 100%;
+  }
+}
+
+/* OVERIGE STIJL */
+h1, h2, p, li, form {
+  font-family: 'Bebas Neue', serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  display: inline;
+}
+
+h2 {
+  font-size: 50px;
+  border: 2px solid #ff4500;
+  color: white;
+  display: inline;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+li {
+  font-size: 20px;
+  color: #ff4500;
+}
+
+form {
+  font-size: 20px;
+  color: #ff4500;
+}
+
+label {
+  margin-block: 10px;
+  display: block;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 250px;
+  font-size: 16px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-  height: 40px;       /* Verhoogt de hoogte van de invoervelden */
-  font-size: 16px;    /* Maakt de tekst groter */
-  padding: 5px 10px;  /* Binnenruimte voor meer comfort */
-  width: 250px;       /* Optioneel: maakt de velden breder */
-  box-sizing: border-box;
+  height: 40px;
 }
-textarea {
-  width: 250px;        /* Zelfde breedte als inputvelden */
-  font-size: 16px;     /* Optioneel: gelijke tekstgrootte */
-  padding: 5px 10px;   /* Binnenruimte */
-  box-sizing: border-box;
+
+img {
+  display: block;
+  max-width: fit-content;
 }
