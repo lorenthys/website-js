@@ -1,16 +1,15 @@
-@import url(http://fonts.bunny.net/css?family=bebas-neue:400);
 
 body {
-  font-family: 'Bebas Neue', serif;
-  background-color: black;
-  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+  color: black;
   margin: 0;
   padding: 20px;
 }
 
 /* MENU STIJLEN */
 .menu {
-  font-family: 'Bebas Neue', serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
   color: white;
@@ -29,7 +28,7 @@ body {
   padding: 1.5rem 1rem;
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 18px;
   background-color: orangered;
   text-align: center;
 }
@@ -97,35 +96,35 @@ body {
 
 /* OVERIGE STIJL */
 h1, h2, p, li, form {
-  font-family: 'Bebas Neue', serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-  font-size: 50px;
-  color: white;
+  font-size: 30px;
+  color: black;
   display: inline;
 }
 
 h2 {
-  font-size: 50px;
-  border: 2px solid #ff4500;
-  color: white;
+  font-size: 30px;
+  border: 2px solid black;
+  color: black;
   display: inline;
 }
 
 p {
-  font-size: 20px;
-  color: white;
+  font-size: 18px;
+  color: black;
 }
 
 li {
-  font-size: 20px;
-  color: #ff4500;
+  font-size: 18px;
+  color: black;
 }
 
 form {
-  font-size: 20px;
-  color: #ff4500;
+  font-size: 18px;
+  color: black;
 }
 
 label {
@@ -139,7 +138,7 @@ select,
 textarea {
   display: block;
   width: 250px;
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px 10px;
   box-sizing: border-box;
 }
@@ -154,4 +153,55 @@ select {
 img {
   display: block;
   max-width: fit-content;
+}
+
+
+
+
+
+
+.main-section {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.main-left,
+.main-right {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.main-left img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.main-right h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.main-right p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .main-left,
+  .main-right {
+    flex: 1 1 100%;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
 }
