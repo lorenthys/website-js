@@ -1,3 +1,6 @@
+.Logo {
+  background-color: black;
+}
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -204,4 +207,33 @@ img {
   .main-section {
     flex-direction: column;
   }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 40px;
+  border-top: 4px solid orangered;
+}
+
+.footer p {
+  margin: 10px 0;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: orangered;
+}
+
+.copyright {
+  font-size: 10px;
 }
