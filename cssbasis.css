@@ -14,6 +14,7 @@ body {
 .menu {
   list-style-type: none;
   display: flex;
+  flex-wrap: nowrap; /* voorkom dat items onder elkaar vallen */
   justify-content: flex-start; /* Links uitlijnen */
   align-items: center;
   padding: 0;
